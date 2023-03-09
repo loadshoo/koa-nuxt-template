@@ -1,7 +1,7 @@
 'use strict'
 const test = {}
 
-test.test = async (ctx, next) => {
+test.test = (ctx, next) => {
   ctx.result = ctx.jwtData
   return next()
 }

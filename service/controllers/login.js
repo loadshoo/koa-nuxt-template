@@ -14,8 +14,8 @@ login.login = async (ctx, next) => {
     }
     
     const user = await userServices.login({
-        userName: userName,
-        password: password
+        userName,
+        password
     })
     if (!user) {
         ctx.result = ''

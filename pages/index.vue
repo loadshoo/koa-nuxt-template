@@ -15,11 +15,11 @@ export default {
             password: 'password'
         }
         request.post('/login', params).then(res => {
-            console.log(res);
+            // console.log(res);
         })
         setTimeout(() => {
             request.get('/test').then(res => {
-                console.log(res);
+                // console.log(res);
             })
         }, 5000)
         
